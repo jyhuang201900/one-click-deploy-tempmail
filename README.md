@@ -4,8 +4,6 @@
 
 上游作者 GitHub：[@dreamhunter2333](https://github.com/dreamhunter2333)
 
-这个仓库只保留 `jsonc` 配置样例，适合单独上传到 GitHub 作为公开部署工具仓库。
-
 ## 功能概览
 
 - 自动下载官方源码，或复用你本地已有的源码目录
@@ -126,13 +124,11 @@ pwsh -File .\deploy-one-click.ps1 -SkipInstall
 3. 配置 `Catch-all -> Send to a Worker -> 后端 Worker`
 4. 如果域名之前被旧 DNS、Pages 或 Worker 占用，先清理旧绑定
 
-## 不提交到仓库的内容
-
-- `one-click.config.jsonc`
-- `.cache/`
-
 ## 致谢
 
 - 原作者主页：[@dreamhunter2333](https://github.com/dreamhunter2333)
 - 上游项目：[dreamhunter2333/cloudflare_temp_email](https://github.com/dreamhunter2333/cloudflare_temp_email)
 - 部署思路参考：LinuxDO 社区相关教程
+- [【教程】2026版 小白也能看懂的自建Cloudflare临时邮箱教程（域名邮箱）](https://linux.do/t/topic/1666961)
+- [用 Claude Code 部署 Cloudflare 临时邮箱，20 分钟搞定](https://linux.do/t/topic/1692459)
+- [使用自动化脚本快速搭建 Cloudflare 临时邮箱，3-5 分钟搞定 （更新为自动化）](https://linux.do/t/topic/1783188)
