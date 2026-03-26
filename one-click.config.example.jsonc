@@ -1,0 +1,96 @@
+{
+  // 项目名称。
+  // 默认会派生：
+  // - 后端 Worker: <projectName>-api
+  // - 前端 Worker: <projectName>-frontend
+  // - D1: <projectName>-db
+  // - KV: <PROJECTNAME>_KV
+  "projectName": "my-tempmail",
+
+  // 手动指定后端 Worker 名称。
+  // 留空则按 projectName 自动生成。
+  "backendWorkerName": "",
+
+  // 手动指定前端 Worker 名称。
+  // 留空则按 projectName 自动生成。
+  "frontendWorkerName": "",
+
+  // 手动指定 D1 数据库名称。
+  "databaseName": "",
+
+  // 手动指定 KV 命名空间名称。
+  "kvNamespaceName": "",
+
+  // 收件主域名。
+  // 例如：cnlion.qzz.io
+  "mailDomain": "example.com",
+
+  // 前端子域名前缀。
+  // 留空则最终前端域名直接等于 mailDomain。
+  "frontendSubdomain": "mail",
+
+  // API 子域名前缀。
+  // 留空则最终 API 域名直接等于 mailDomain。
+  "apiSubdomain": "email-api",
+
+  // 手动指定前端完整域名。
+  // 如果填写了这个值，会优先于 frontendSubdomain 生效。
+  "frontendDomain": "mail.example.com",
+
+  // 手动指定 API 完整域名。
+  // 如果填写了这个值，会优先于 apiSubdomain 生效。
+  "apiDomain": "email-api.example.com",
+
+  // 站点标题。
+  // 留空则默认使用前端域名 + temp mail。
+  "title": "",
+
+  // 默认语言。
+  // 常用：zh / en
+  "defaultLanguage": "zh",
+
+  // 临时邮箱前缀。
+  // 例如 tmp -> tmpxxxx@example.com
+  "prefix": "tmp",
+
+  // 后台 /admin 登录密码。
+  "adminPassword": "change-me",
+
+  // JWT 密钥。
+  // 留空则脚本自动生成。
+  "jwtSecret": "",
+
+  // 已存在的 D1 ID。
+  // 如果留空，脚本会自动创建并回写。
+  "databaseId": "",
+
+  // 已存在的 KV ID。
+  // 如果留空，脚本会自动创建并回写。
+  "kvId": "",
+
+  // 默认展示的域名列表。
+  "defaultDomains": [],
+
+  // 是否允许创建邮箱。
+  "enableUserCreateEmail": true,
+
+  // 是否禁用匿名用户直接创建邮箱。
+  // 默认为 true，更贴近 LinuxDO 教程里的严格模式。
+  "disableAnonymousUserCreateEmail": true,
+
+  // 是否允许删除邮箱。
+  "enableUserDeleteEmail": false,
+
+  // 是否开启自动回复。
+  "enableAutoReply": false,
+
+  // 管理员角色名。
+  "adminUserRole": "admin",
+
+  // 默认用户角色。
+  "userDefaultRole": "vip",
+
+  // 自定义用户角色规则。
+  // 留空时脚本会自动生成一个 vip 和一个 admin 规则。
+  "userRoles": []
+}

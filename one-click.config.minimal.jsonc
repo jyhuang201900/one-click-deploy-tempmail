@@ -1,0 +1,20 @@
+{
+  // 项目名称。
+  // 用来派生默认资源名，例如 Worker / D1 / KV。
+  "projectName": "my-tempmail",
+
+  // 你的收件主域名。
+  // 例如：cnlion.qzz.io
+  "mailDomain": "example.com",
+
+  // 前端访问子域名前缀。
+  // 最终会得到：mail.example.com
+  "frontendSubdomain": "mail",
+
+  // API 访问子域名前缀。
+  // 最终会得到：email-api.example.com
+  "apiSubdomain": "email-api",
+
+  // 后台 /admin 登录密码。
+  "adminPassword": "change-me"
+}
