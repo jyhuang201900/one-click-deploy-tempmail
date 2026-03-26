@@ -2,6 +2,8 @@
 
 基于 [dreamhunter2333/cloudflare_temp_email](https://github.com/dreamhunter2333/cloudflare_temp_email) 的一键部署包装脚本，目标是把“下载源码、生成配置、创建 Cloudflare 资源、构建并部署”尽量收敛到一次执行里。
 
+上游作者 GitHub：[@dreamhunter2333](https://github.com/dreamhunter2333)
+
 这个仓库只保留 `jsonc` 配置样例，适合单独上传到 GitHub 作为公开部署工具仓库。
 
 ## 功能概览
@@ -131,5 +133,6 @@ pwsh -File .\deploy-one-click.ps1 -SkipInstall
 
 ## 致谢
 
+- 原作者主页：[@dreamhunter2333](https://github.com/dreamhunter2333)
 - 上游项目：[dreamhunter2333/cloudflare_temp_email](https://github.com/dreamhunter2333/cloudflare_temp_email)
 - 部署思路参考：LinuxDO 社区相关教程
