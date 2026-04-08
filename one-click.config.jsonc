@@ -1,7 +1,7 @@
 {
   "projectName": "jy-tempmail",
-  "mailDomain": "xxx.com",
+  "mailDomain": "mail2026.ccwu.cc",
   "frontendSubdomain": "mail",
   "apiSubdomain": "email-api",
-  "adminPassword": "***"
+  "adminPassword": "0000"
 }
